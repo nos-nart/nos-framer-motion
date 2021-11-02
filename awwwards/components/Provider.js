@@ -2,6 +2,7 @@ import { lightTheme, darkTheme } from '../theme'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import { normalize } from "styled-normalize"
 import React from 'react'
+import { useGlobalStateContext } from '../context/globalContext'
 
 const GlobalStyle = createGlobalStyle`
   ${normalize}
@@ -25,8 +26,8 @@ const GlobalStyle = createGlobalStyle`
 
 export default function Provider({ children }) {
   const [mounted, setMounted] = React.useState(false)
-
-  const theme = 
+  const { currentTheme } = useGlobalStateContext()
+  const theme = currentTheme === "dark" ? darkTheme : lightTheme
 
   React.useEffect(() => {
     setMounted(true)
