@@ -2969,9 +2969,9 @@ scheduler@^0.20.2:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
 
-"scroller@git://github.com/mjohnston/scroller.git":
+"scroller@git://github.com/mjohnston/scroller":
   version "0.0.1"
-  resolved "git://github.com/mjohnston/scroller.git#054c3349d5ff7474589eb7fbbb36708e5c48e435"
+  resolved "git://github.com/mjohnston/scroller#054c3349d5ff7474589eb7fbbb36708e5c48e435"
 
 semver@^6.0.0, semver@^6.3.0:
   version "6.3.0"

@@ -1,11 +1,14 @@
 import Provider from '../components/Provider'
+import { GlobalProvider } from '../context/globalContext'
 
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <Provider>
-        <Component {...pageProps} />
-      </Provider>
+      <GlobalProvider>
+        <Provider>
+          <Component {...pageProps} />
+        </Provider>
+      </GlobalProvider>
     </>
   )
 }

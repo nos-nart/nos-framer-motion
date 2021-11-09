@@ -23,7 +23,7 @@ const globalReducer = (state, action) => {
 }
 
 function getTheme() {
-  if (window !== undefined) {
+  if (typeof window !== undefined) {
     return window.localStorage.getItem('theme') === null
       ? 'dark'
       : window.localStorage.getItem('theme')
@@ -48,6 +48,6 @@ export const GlobalProvider = ({ children }) => {
   )
 }
 
-export const useGlobalStateContext = () => useContext(GlobalStateContext)
+export const useGlobalStateContext = () => React.useContext(GlobalStateContext)
 
-export const useGlobalDispatchContext = () => useContext(GlobalDispatchContext)
+export const useGlobalDispatchContext = () => React.useContext(GlobalDispatchContext)
