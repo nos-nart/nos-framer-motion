@@ -1,5 +1,6 @@
 import { useRoutes } from 'react-router-dom'
 import { UseTransform, Dashboard } from '@/pages'
+import AnimatePage from '@/components/AnimatePage'
 
 function App() {
   let element = useRoutes([
@@ -13,7 +14,11 @@ function App() {
     },
   ]);
 
-  return element;
+  return (
+    <AnimatePage>
+      {element}
+    </AnimatePage>
+  )
 }
 
 export default App
