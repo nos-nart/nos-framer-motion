@@ -10,7 +10,7 @@ export const Dashboard = () => {
         </div>
         <div className='py-6'>
           <Link to="/use-transform">
-            <span className="link relative">Go to useTransform</span>
+            <span className="link relative">🤜🏼 Go to useTransform</span>
           </Link>
         </div>
       </div>

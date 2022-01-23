@@ -34,7 +34,7 @@ const AnimatePage = (props) => {
             animate="animate"
             exit="exit"
             transition={{ duration: 0.5 }}
-            className="bg-gray-800 w-screen h-screen absolute top-0 left-0 z-50"
+            className="bg-gray-800 h-screen w-screen absolute top-0 left-0 z-50"
             onAnimationComplete={() => setDisplay(false)}
           />
         )
