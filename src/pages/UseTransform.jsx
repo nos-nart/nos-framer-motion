@@ -1,13 +1,9 @@
-import { Markdown } from "@/components/Markdown"
-import markdown from '@/markdown/usetransform.md?raw'
+import markdown from '@/markdown/useTransform.md?raw'
+import { Note } from '@/components/note/Note'
 
 // @NOTE: https://github.com/brillout/vite-plugin-mdx
 export const UseTransform = () => {
   return (
-    <>
-      <p onClick={() => console.log('hello world')}>hello world</p>
-      useTransform
-      <Markdown markdown={markdown} />
-    </>
+    <Note title={'🤜🏼 useTransform'} contents={markdown} />
   )
 }
