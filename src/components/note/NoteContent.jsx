@@ -11,7 +11,7 @@ export const NoteContent = (props) => {
   const wrapperRef = useRef()
 
   const onScroll = () => {
-    if (wrapperRef) {
+     if (wrapperRef) {
       if (wrapperRef.current.scrollTop >= THRESH_HOLD && !showScrollTop) {
         setShowScrollTop(true)
       }
@@ -23,7 +23,7 @@ export const NoteContent = (props) => {
 
   return (
     <div
-      className='w-1/2 scroll-smooth relative p-4 bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-300 h-screen overflow-y-scroll'
+      className='w-1/2 scroll-smooth relative px-4 py-8 bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-300 h-screen overflow-y-scroll'
       ref={wrapperRef}
       onScroll={onScroll}
     >
@@ -40,7 +40,7 @@ export const NoteContent = (props) => {
         <VscArrowUp size={25} className='fill-blue-500' />
         <span style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }} className='text-xs font-bold text-blue-500'>To top</span>
       </motion.div>
-      <div className='rounded p-4 bg-slate-100 max-w-2xl mx-auto'>
+      <div className='rounded-md p-4 bg-slate-200 max-w-2xl mx-auto'>
         <Markdown markdown={props.contents} />
       </div>
     </div>

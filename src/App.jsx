@@ -1,5 +1,5 @@
 import { useRoutes } from 'react-router-dom'
-import { UseTransform, Dashboard } from '@/pages'
+import { UseTransform, Dashboard, Test } from '@/pages'
 import AnimatePage from '@/components/AnimatePage'
 
 function App() {
@@ -11,6 +11,10 @@ function App() {
     {
       path: "/use-transform",
       element: <UseTransform />,
+    },
+    {
+      path: "/test",
+      element: <Test />,
     },
   ]);
 

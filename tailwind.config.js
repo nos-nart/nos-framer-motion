@@ -6,6 +6,9 @@ module.exports = {
     extend: {
       fontFamily: {
         'inter': ['"Inter"', 'sans-serif']
+      },
+      margin: {
+        '-2px': '-2px',
       }
     }
   },
