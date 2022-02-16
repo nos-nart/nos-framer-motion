@@ -45,6 +45,16 @@ const renderTitle = (props, state) => (tab) => {
   );
 };
 
+const renderContent = (children, props) => (
+  <Pane
+    // eslint-disable-next-line react/prop-types
+    noPadding={props.noPadding}
+    // eslint-disable-next-line react/prop-types
+    fullHeight={props.fullHeight}
+    children={children}
+  />
+) 
+
 export const Tabs = (props) => {
   const { children } = props
   const style = Tabs.styles.outset
@@ -55,11 +65,11 @@ export const Tabs = (props) => {
 
   return (
     <div>
-      <div className={style.title}>
+      <ul className={style.title}>
         {children.map(renderTitle(props, state))}
-      </div>
+      </ul>
       <div className={style.content}>
-        {style.renderContent(activeTab.pane(), props)}
+        {renderContent(activeTab.pane(), props)}
       </div>
     </div>
   );
@@ -70,15 +80,6 @@ const outsetStyle = {
   title: ['flex-[0_0_auto]', 'px-16', 'relative', 'flex', 'z-2'].join(' '),
   active: ['border-b-2', 'border-solid', 'border-blue-500'].join(' '),
   inactive: ['border-b-2', 'border-solid', 'border-transparent'].join(' '),
-  renderContent: (children, props) => (
-    <Pane
-      // eslint-disable-next-line react/prop-types
-      noPadding={props.noPadding}
-      // eslint-disable-next-line react/prop-types
-      fullHeight={props.fullHeight}
-      children={children}
-    />
-  ),
 };
 
 
@@ -103,4 +104,5 @@ Tabs.propTypes = {
 
 Tabs.styles = {
   outset: outsetStyle,
+  // flat: flatStyle,
 }

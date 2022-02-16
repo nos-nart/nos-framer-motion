@@ -3,10 +3,11 @@ import { NoteContent } from './NoteContent'
 import { NotePlayground } from './NotePlayground'
 
 export const Note = (props) => {
+  const { contents, title, ...rest } = props
   return (
     <div className="flex items-start min-h-screen w-full">
-      <NoteContent title={props.title} contents={props.contents} />
-      <NotePlayground />
+      <NoteContent title={title} contents={contents} />
+      <NotePlayground completedCode={rest} />
     </div>
   )
 }
