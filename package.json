@@ -1,35 +1,23 @@
 {
-  "name": "nos-framer-motion",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "browserslist": "> 0.5%, last 2 versions, not dead",
-  "source": "src/index.html",
+  "name": "test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel",
-    "build": "parcel build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nos-nart/nos-framer-motion.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nos-nart/nos-framer-motion/issues"
-  },
-  "homepage": "https://github.com/nos-nart/nos-framer-motion#readme",
-  "devDependencies": {
-    "autoprefixer": "^10.4.4",
-    "parcel": "^2.4.0",
-    "postcss": "^8.4.12",
-    "tailwindcss": "^3.0.23"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@mdx-js/react": "^2.1.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "@mdx-js/mdx": "^2.1.1",
+    "@mdx-js/react": "^2.1.1",
+    "@mdx-js/rollup": "^2.1.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.70.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.0.7",
+    "vite": "^2.9.0"
   }
 }
