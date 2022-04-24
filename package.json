@@ -1,23 +1,29 @@
 {
-  "name": "test",
-  "private": true,
+  "name": "my-vue-app",
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@mdx-js/mdx": "^2.1.1",
-    "@mdx-js/react": "^2.1.1",
-    "@mdx-js/rollup": "^2.1.1",
+    "framer-motion": "^6.2.1",
+    "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "rollup": "^2.70.1"
+    "react-icons": "^4.3.1",
+    "react-markdown": "^8.0.0",
+    "react-router-dom": "^6.2.1",
+    "react-syntax-highlighter": "^15.4.5",
+    "remark-gfm": "^3.0.1"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.0",
+    "@types/react": "^17.0.38",
     "@vitejs/plugin-react": "^1.0.7",
-    "vite": "^2.9.0"
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.15",
+    "vite": "^2.7.2"
   }
 }
